@@ -201,6 +201,14 @@
   optionalDependencies:
     lmdb "3.4.2"
 
+"@angular/cdk@20.2.10":
+  version "20.2.10"
+  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-20.2.10.tgz#56cf4cf1ec0175f07c19ddd1c2d3addda1a914f3"
+  integrity sha512-d95C2r3JP11KCahouWmPaxswz/EE7Zn1k8ocoGt70jl33x42Sg96vAHeOpnQ4yfrdA4W7Q+eWB/NqqvAGCzOPQ==
+  dependencies:
+    parse5 "^8.0.0"
+    tslib "^2.3.0"
+
 "@angular/cli@^20.3.6":
   version "20.3.7"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-20.3.7.tgz#f587dba0541ba418b25afa3a7e235e680298b90c"
@@ -264,6 +272,13 @@
   version "20.3.7"
   resolved "https://registry.yarnpkg.com/@angular/forms/-/forms-20.3.7.tgz#6e722740717e516bbc85b52ccde4141997b00004"
   integrity sha512-uOCGCoqXeAWIlQMWiIeed/W8g8h2tk91YemMI+Ce1VQ/36Xfft40Bouz4eKcvJV6kLXGygdpWjzFGz32CE+3Og==
+  dependencies:
+    tslib "^2.3.0"
+
+"@angular/material@20.2.10":
+  version "20.2.10"
+  resolved "https://registry.yarnpkg.com/@angular/material/-/material-20.2.10.tgz#49109a8a7bf1beb37c55df9b75c097c139b224a6"
+  integrity sha512-WkJfUu7KiQY2lqHjMZtEKBG653sPmky0nytTMASsfQ/xUs56W3CAAEOuKhSyCNKsNeFJZS/NgJnvlpRzcE5k6g==
   dependencies:
     tslib "^2.3.0"
 
