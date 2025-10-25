@@ -1,0 +1,8 @@
+@for (shortcut of shortcuts; track $index) {
+  <app-shortcut [data]="shortcut" />
+}
+@empty {
+  <div class="home-empty">
+    <h1>Nenhum exemplo disponível</h1>
+  </div>
+}

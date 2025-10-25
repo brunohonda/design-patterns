@@ -1,0 +1,19 @@
+$shortcut-size: 100px;
+
+.shortcut {
+  position: relative;
+  justify-content: flex-start !important;
+  align-items: flex-end !important;
+  width: $shortcut-size;
+  height: $shortcut-size;
+  padding: var(--mat-sys-corner-extra-small) !important;
+  border-radius: var(--mat-sys-corner-extra-small);
+  box-shadow: var(--mat-sys-level1);
+
+  &__icon {
+    position: absolute !important;
+    top: var(--mat-sys-corner-extra-small);
+    right: var(--mat-sys-corner-extra-small);
+    margin-right: 0 !important;
+  }
+}

@@ -1,3 +1,5 @@
+@use '@angular/material' as mat;
+
 :host {
   display: grid;
   width: 100vw;
@@ -10,9 +12,20 @@
   background-color: var(--mat-sys-primary);
   color: var(--mat-sys-surface);
   padding: 1rem;
+
+  @include mat.list-overrides((
+    active-indicator-color: var(--mat-sys-secondary),
+    list-item-label-text-color: var(--mat-sys-surface),
+    list-item-focus-label-text-color: var(--mat-sys-surface),
+    list-item-leading-icon-color: var(--mat-sys-surface),
+    list-item-hover-label-text-color: var(--mat-sys-surface),
+    list-item-hover-state-layer-color: var(--mat-sys-surface)
+  ));
 }
 
 .main-content {
+  display: grid;
+  grid-template-rows: 0 1fr;
   padding: 1rem;
   overflow: hidden auto;
 }

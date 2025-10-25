@@ -1,5 +1,13 @@
 <nav class="main-nav">
   <span>Design Patterns</span>
+  <mat-nav-list>
+  @for (link of links; track $index) {
+    <a mat-list-item [routerLink]="link.routeCommands">
+      <mat-icon matListItemIcon aria-hidden="false" [fontIcon]="link.icon" />
+      {{ link.text }}
+    </a>
+  }
+</mat-nav-list>
 </nav>
 <main class="main-content">
   <router-outlet></router-outlet>
