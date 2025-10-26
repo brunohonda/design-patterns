@@ -9,18 +9,38 @@
 }
 
 .main-nav {
-  background-color: var(--mat-sys-primary);
-  color: var(--mat-sys-surface);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--mat-sys-primary-container);
+  color: var(--mat-sys-primary);
   padding: 1rem;
 
+  & :hover:not(:focus) {
+    color: var(--mat-sys-on-surface);
+  }
+
+  & :focus {
+    color: var(--mat-sys-primary);
+  }
+
   @include mat.list-overrides((
-    active-indicator-color: var(--mat-sys-secondary),
-    list-item-label-text-color: var(--mat-sys-surface),
-    list-item-focus-label-text-color: var(--mat-sys-surface),
-    list-item-leading-icon-color: var(--mat-sys-surface),
-    list-item-hover-label-text-color: var(--mat-sys-surface),
-    list-item-hover-state-layer-color: var(--mat-sys-surface)
+    active-indicator-color: var(--mat-sys-on-tertiary),
+    list-item-label-text-color: var(--mat-sys-primary),
+    list-item-focus-label-text-color: var(--mat-sys-primary),
+    list-item-leading-icon-color: var(--mat-sys-primary),
+    list-item-hover-label-text-color: var(--mat-sys-on-surface)
   ));
+
+  &__logo {
+    height: 90px;
+    max-width: 70%;
+    margin: 0 auto;
+  }
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 .main-content {
