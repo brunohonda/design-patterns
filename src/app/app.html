@@ -1,13 +1,14 @@
 <nav class="main-nav">
-  <span>Design Patterns</span>
+  <img src="assets/images/angular-design-patterns-logo.svg" alt="Angular Design Patterns" class="main-nav__logo" />
+  <h2 class="main-nav__title">Design Patterns</h2>
   <mat-nav-list>
-  @for (link of links; track $index) {
-    <a mat-list-item [routerLink]="link.routeCommands">
-      <mat-icon matListItemIcon aria-hidden="false" [fontIcon]="link.icon" />
-      {{ link.text }}
-    </a>
-  }
-</mat-nav-list>
+    @for (link of links; track $index) {
+      <a mat-list-item [routerLink]="link.routeCommands">
+        <mat-icon matListItemIcon aria-hidden="false" [fontIcon]="link.icon" />
+        {{ link.text }}
+      </a>
+    }
+  </mat-nav-list>
 </nav>
 <main class="main-content">
   <router-outlet></router-outlet>
